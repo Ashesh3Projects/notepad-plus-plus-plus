@@ -42,12 +42,12 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE    "CompanyName",        "Don HO don.h@free.fr\0"
+            VALUE    "CompanyName",        "Notepad+++ Inc\0"
             VALUE    "FileDescription",    "Notepad+++\0"
             VALUE    "FileVersion",        VERSION_PRODUCT_VALUE
-            VALUE    "InternalName",       "notepad++.exe\0"
-            VALUE    "LegalCopyright",     "Copyleft 1998-2023 by Don HO\0"
-            VALUE    "OriginalFilename",   "notepad++.exe\0"
+            VALUE    "InternalName",       "Notepad+++.exe\0"
+            VALUE    "LegalCopyright",     "Copyleft 2017-2025 by Notepad+++ Inc\0"
+            VALUE    "OriginalFilename",   "Notepad+++.exe\0"
             VALUE    "ProductName",        "Notepad+++\0"
             VALUE    "ProductVersion",     VERSION_PRODUCT_VALUE
         END

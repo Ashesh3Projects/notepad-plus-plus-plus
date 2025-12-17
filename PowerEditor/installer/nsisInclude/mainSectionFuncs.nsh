@@ -322,7 +322,7 @@ jN64:
 
 
 	IfFileExists "$INSTDIR\plugins\NppQCP\NppQCP.dll" 0 NppQCPTestEnd64
-		MessageBox MB_OK "Due to NppQCP plugin's crash issue on Notepad++ x64 binary, NppQCP.dll will be removed." /SD IDOK
+		MessageBox MB_OK "Due to NppQCP plugin's crash issue on Notepad+++ x64 binary, NppQCP.dll will be removed." /SD IDOK
 		Rename "$INSTDIR\plugins\NppQCP\NppQCP.dll" "$INSTDIR\plugins\disabled\NppQCP.dll"
 		Delete "$INSTDIR\plugins\NppQCP\NppQCP.dll"
 NppQCPTestEnd64:
@@ -375,29 +375,29 @@ FunctionEnd
 
 Function shortcutLinkManagement
 	; remove all the npp shortcuts from current user
-	Delete "$DESKTOP\Notepad++.lnk"
-	Delete "$SMPROGRAMS\Notepad++.lnk"
-	Delete "$SMPROGRAMS\${APPNAME}\Notepad++.lnk"
+	Delete "$DESKTOP\Notepad+++.lnk"
+	Delete "$SMPROGRAMS\Notepad+++.lnk"
+	Delete "$SMPROGRAMS\${APPNAME}\Notepad+++.lnk"
 	Delete "$SMPROGRAMS\${APPNAME}\readme.lnk"
 	Delete "$SMPROGRAMS\${APPNAME}\Uninstall.lnk"
 	RMDir "$SMPROGRAMS\${APPNAME}"
-		
-	; detect the right of 
+
+	; detect the right of
 	UserInfo::GetAccountType
 	Pop $1
 	StrCmp $1 "Admin" 0 +2
 	SetShellVarContext all
-	
+
 	; set the shortcuts working directory
 	; http://nsis.sourceforge.net/Docs/Chapter4.html#createshortcut
 	SetOutPath "$INSTDIR\"
-	
+
 	; add all the npp shortcuts for all user or current user
-	CreateShortCut "$SMPROGRAMS\Notepad++.lnk" "$INSTDIR\notepad++.exe"
+	CreateShortCut "$SMPROGRAMS\Notepad+++.lnk" "$INSTDIR\notepad++.exe"
 	${If} $createShortcutChecked == ${BST_CHECKED}
-		CreateShortCut "$DESKTOP\Notepad++.lnk" "$INSTDIR\notepad++.exe"
+		CreateShortCut "$DESKTOP\Notepad+++.lnk" "$INSTDIR\notepad++.exe"
 	${EndIf}
-	
+
 	SetShellVarContext current
 FunctionEnd
 

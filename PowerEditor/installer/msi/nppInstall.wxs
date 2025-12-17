@@ -1,7 +1,7 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
 
-	<Package	Name="Notepad++"
-				Manufacturer="Notepad++ team"
+	<Package	Name="Notepad+++"
+				Manufacturer="Notepad+++ Inc"
 				Version="8.8.9"
 				UpgradeCode="{CDB13460-04DF-4708-A7FD-4CB4A0684605}">
 
@@ -22,7 +22,7 @@
 		Installation directory structure
 		-->
 		<StandardDirectory Id="ProgramFiles64Folder">
-			<Directory Id="INSTALLFOLDER" Name="Notepad++">
+			<Directory Id="INSTALLFOLDER" Name="Notepad+++">
 				<Directory Id="ContextMenuFolder" Name="contextMenu" />
 				<Directory Id="UpdaterFolder" Name="updater" />
 				<Directory Id="AutoCompletionFolder" Name="autoCompletion" />
@@ -41,7 +41,7 @@
 		</StandardDirectory>
 
 		<StandardDirectory Id="ProgramMenuFolder">
-			<Directory Id="ApplicationProgramsFolder" Name="Notepad++" />
+			<Directory Id="ApplicationProgramsFolder" Name="Notepad+++" />
 		</StandardDirectory>
 
 	
@@ -51,11 +51,11 @@
 		<ComponentGroup Id="ShortcutComponentGroup" Directory="ApplicationProgramsFolder">
 			<Component Id="cmp_NppShortcut" Guid="{9DF5F816-BF4F-496B-9095-E1E8C01B89CE}"> 
 			<Shortcut	Id="startmenuShortcut"
-						Name="Notepad++"
+						Name="Notepad+++"
 						Target="[INSTALLFOLDER]notepad++.exe"
 						WorkingDirectory="INSTALLFOLDER" />
 
-			<RegistryValue Root="HKCU" Key="Software\Notepad++" Name="StartMenuShortcut" Type="integer" Value="1"  KeyPath="yes"/>
+			<RegistryValue Root="HKCU" Key="Software\Notepad+++" Name="StartMenuShortcut" Type="integer" Value="1"  KeyPath="yes"/>
 			<RemoveFolder Id="RemoveApplicationProgramsFolder" On="uninstall" />
 			</Component>
 		</ComponentGroup>
@@ -94,7 +94,7 @@
 
 
 
-		<Feature Id="MainApplication" Title="Notepad++ Files" Level="1">
+		<Feature Id="MainApplication" Title="Notepad+++ Files" Level="1">
 			<ComponentGroupRef Id="CoreComponentGroup" />
 
 			<ComponentGroupRef Id="ShortcutComponentGroup" />
