@@ -31,7 +31,7 @@ set DOUBLE_SIGNING=/as
 
 REM files to be signed
 
-set nppBinaries=..\bin\notepad++.exe ..\bin64\notepad++.exe ..\binarm64\notepad++.exe
+set nppBinaries=..\bin\Notepad+++.exe ..\bin64\Notepad+++.exe ..\binarm64\Notepad+++.exe
 
 set componentsBinaries=..\bin\plugins\Config\nppPluginList.dll ..\bin64\plugins\Config\nppPluginList.dll ..\binarm64\plugins\Config\nppPluginList.dll ..\bin\updater\GUP.exe ..\bin64\updater\GUP.exe ..\binarm64\updater\GUP.exe ..\bin\updater\libcurl.dll ..\bin64\updater\libcurl.dll ..\binarm64\updater\libcurl.dll
 
@@ -91,7 +91,7 @@ copy /Y ..\bin\doLocalConf.xml .\minimalist\
 If ErrorLevel 1 goto End
 copy /Y ..\bin\nppLogNulContentCorruptionIssue.xml .\minimalist\
 If ErrorLevel 1 goto End
-copy /Y ..\bin\"notepad++.exe" .\minimalist\
+copy /Y ..\bin\"Notepad+++.exe" .\minimalist\
 If ErrorLevel 1 goto End
 copy /Y ".\themes\DarkModeDefault.xml" .\minimalist\themes\
 If ErrorLevel 1 goto End
@@ -126,7 +126,7 @@ copy /Y ..\bin\doLocalConf.xml .\minimalist64\
 If ErrorLevel 1 goto End
 copy /Y ..\bin\nppLogNulContentCorruptionIssue.xml .\minimalist64\
 If ErrorLevel 1 goto End
-copy /Y ..\bin64\"notepad++.exe" .\minimalist64\
+copy /Y ..\bin64\"Notepad+++.exe" .\minimalist64\
 If ErrorLevel 1 goto End
 copy /Y ".\themes\DarkModeDefault.xml" .\minimalist64\themes\
 If ErrorLevel 1 goto End
@@ -161,7 +161,7 @@ copy /Y ..\bin\doLocalConf.xml .\minimalistArm64\
 If ErrorLevel 1 goto End
 copy /Y ..\bin\nppLogNulContentCorruptionIssue.xml .\minimalistArm64\
 If ErrorLevel 1 goto End
-copy /Y ..\binarm64\"notepad++.exe" .\minimalistArm64\
+copy /Y ..\binarm64\"Notepad+++.exe" .\minimalistArm64\
 If ErrorLevel 1 goto End
 copy /Y ".\themes\DarkModeDefault.xml" .\minimalistArm64\themes\
 If ErrorLevel 1 goto End
@@ -247,7 +247,7 @@ copy /Y ..\bin\doLocalConf.xml .\zipped.package.release\
 If ErrorLevel 1 goto End
 copy /Y ..\bin\nppLogNulContentCorruptionIssue.xml .\zipped.package.release\
 If ErrorLevel 1 goto End
-copy /Y ..\bin\"notepad++.exe" .\zipped.package.release\
+copy /Y ..\bin\"Notepad+++.exe" .\zipped.package.release\
 If ErrorLevel 1 goto End
 
 
@@ -275,7 +275,7 @@ copy /Y ..\bin\doLocalConf.xml .\zipped.package.release64\
 If ErrorLevel 1 goto End
 copy /Y ..\bin\nppLogNulContentCorruptionIssue.xml .\zipped.package.release64\
 If ErrorLevel 1 goto End
-copy /Y ..\bin64\"notepad++.exe" .\zipped.package.release64\
+copy /Y ..\bin64\"Notepad+++.exe" .\zipped.package.release64\
 If ErrorLevel 1 goto End
 
 
@@ -302,7 +302,7 @@ copy /Y ..\bin\doLocalConf.xml .\zipped.package.releaseArm64\
 If ErrorLevel 1 goto End
 copy /Y ..\bin\nppLogNulContentCorruptionIssue.xml .\zipped.package.releaseArm64\
 If ErrorLevel 1 goto End
-copy /Y ..\binarm64\"notepad++.exe" .\zipped.package.releaseArm64\
+copy /Y ..\binarm64\"Notepad+++.exe" .\zipped.package.releaseArm64\
 If ErrorLevel 1 goto End
 
 

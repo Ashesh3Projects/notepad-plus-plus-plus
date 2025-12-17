@@ -383,7 +383,7 @@
     <ClInclude Include="..\src\WinControls\ReadDirectoryChanges\ReadFileChanges.h" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="..\src\notepad++.exe.manifest" />
+    <Manifest Include="..\src\Notepad+++.exe.manifest" />
   </ItemGroup>
   <Import Project="notepadPlus.uchardet.targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

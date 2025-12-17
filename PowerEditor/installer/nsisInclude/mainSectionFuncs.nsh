@@ -103,11 +103,11 @@ Function copyCommonFiles
 	File "..\bin\readme.txt"
 	
 !ifdef ARCH64
-	File "..\bin64\notepad++.exe"
+	File "..\bin64\Notepad+++.exe"
 !else ifdef ARCHARM64
-	File "..\binarm64\notepad++.exe"
+	File "..\binarm64\Notepad+++.exe"
 !else
-	File "..\bin\notepad++.exe"
+	File "..\bin\Notepad+++.exe"
 !endif
 
 	; Markdown in user defined languages
@@ -393,9 +393,9 @@ Function shortcutLinkManagement
 	SetOutPath "$INSTDIR\"
 
 	; add all the npp shortcuts for all user or current user
-	CreateShortCut "$SMPROGRAMS\Notepad+++.lnk" "$INSTDIR\notepad++.exe"
+	CreateShortCut "$SMPROGRAMS\Notepad+++.lnk" "$INSTDIR\Notepad+++.exe"
 	${If} $createShortcutChecked == ${BST_CHECKED}
-		CreateShortCut "$DESKTOP\Notepad+++.lnk" "$INSTDIR\notepad++.exe"
+		CreateShortCut "$DESKTOP\Notepad+++.lnk" "$INSTDIR\Notepad+++.exe"
 	${EndIf}
 
 	SetShellVarContext current

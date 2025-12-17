@@ -197,7 +197,7 @@ SET(src_files
 			./WinControls/ColourPicker/WordStyleDlg.cpp
 			./ScintillaComponent/xmlMatchedTagsHighlighter.cpp
 			./dpiAware.manifest
-			./notepad++.exe.manifest
+			./Notepad+++.exe.manifest
 )
 
 SET(include_files

@@ -201,7 +201,7 @@ Section Uninstall
 	;Remove from registry...
 	DeleteRegKey HKLM "${UNINSTALL_REG_KEY}"
 	DeleteRegKey HKLM "SOFTWARE\${APPNAME}"
-	DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\notepad++.exe"
+	DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Notepad+++.exe"
 
 	; Delete self
 	Delete "$INSTDIR\uninstall.exe"
@@ -226,7 +226,7 @@ Section Uninstall
 	Delete "$INSTDIR\change.log"
 	Delete "$INSTDIR\LICENSE"
 
-	Delete "$INSTDIR\notepad++.exe"
+	Delete "$INSTDIR\Notepad+++.exe"
 	Delete "$INSTDIR\readme.txt"
 	
 	${If} $doLocalConf == "true"

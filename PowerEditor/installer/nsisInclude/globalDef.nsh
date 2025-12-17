@@ -22,11 +22,11 @@
 ; Get Notepad++ version from the notepad++ binary
 
 !ifdef ARCH64
-	!getdllversion "..\bin64\notepad++.exe" nppVer_
+	!getdllversion "..\bin64\Notepad+++.exe" nppVer_
 !else ifdef ARCHARM64
-	!getdllversion "..\binarm64\notepad++.exe" nppVer_
+	!getdllversion "..\binarm64\Notepad+++.exe" nppVer_
 !else
-	!getdllversion "..\bin\notepad++.exe" nppVer_
+	!getdllversion "..\bin\Notepad+++.exe" nppVer_
 !endif
 
 !define APPVERSION		${nppVer_1}.${nppVer_2}		; 7.5

@@ -52,7 +52,7 @@
 			<Component Id="cmp_NppShortcut" Guid="{9DF5F816-BF4F-496B-9095-E1E8C01B89CE}"> 
 			<Shortcut	Id="startmenuShortcut"
 						Name="Notepad+++"
-						Target="[INSTALLFOLDER]notepad++.exe"
+						Target="[INSTALLFOLDER]Notepad+++.exe"
 						WorkingDirectory="INSTALLFOLDER" />
 
 			<RegistryValue Root="HKCU" Key="Software\Notepad+++" Name="StartMenuShortcut" Type="integer" Value="1"  KeyPath="yes"/>
