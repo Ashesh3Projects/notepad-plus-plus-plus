@@ -16,7 +16,7 @@
 
 
 ; Define the application name
-!define APPNAME "Notepad++"
+!define APPNAME "Notepad+++"
 
 ; ------------------------------------------------------------------------
 ; Get Notepad++ version from the notepad++ binary
@@ -53,7 +53,7 @@
 
 !define APPNAMEANDVERSION	"${APPNAME} v${APPVERSION}"
 !define CompanyName		"Don HO don.h@free.fr"
-!define Description		"Notepad++ : a free (GNU) source code editor"
+!define Description		"Notepad+++ : a free (GNU) source code editor"
 !define Version		"${nppVer_1}.${nppVer_2}.${nppVer_3}.${nppVer_4}"
 !define ProdVer		"${VERSION_MAJOR}.${VERSION_MINOR}"
 !define LegalCopyright		"Copyleft 1998-2017 by Don HO"
